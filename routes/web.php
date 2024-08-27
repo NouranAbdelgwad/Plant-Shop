@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PlantController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [PlantController::class, "index"]);
+Route::get("/contact", function(){return view("emails.contact");});
+Route::post("/contact", [ContactController::class, "send"]);
+Route::get("/plants", [PlantController::class, "get"]);
+Route::get("/sorted", [PlantController::class, "filter"]);
+Route::get("/about", function(){return view("about");});
+Route::get("/plants/{id}", [PlantController::class, "show"]);
+
+Route::get('/cart', [CartController::class, 'index']);
+Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
+Route::delete("/cart/delete/{id}", [CartController::class, "delete"])->name('cart.delete');
+Route::put("/cart/update", [CartController::class, "updateAll"])->name('cart.update');
+
+
+// Route::post('/cart/clear', [CartController::class, 'clear'])->name('cart.clear');
+
+
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+require __DIR__.'/auth.php';

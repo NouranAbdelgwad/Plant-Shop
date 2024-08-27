@@ -1,0 +1,268 @@
+body{
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6, .navbar-brand{
+    font-family: 'Playfair Display', serif;
+}
+svg{
+    color: #5c9735;
+}
+.nav-link{
+    color: black !important;
+    font-size: larger;
+}
+.green-btn {
+    color: white;
+    background-color: #5c9735;
+    border: 1px white;
+    padding: 10px 20px;
+}
+footer{
+    background-color: #141a0f;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center !important;
+}
+
+.address-input{
+    height: 50px;
+    width: 80%;
+    margin-right: 10px;
+}
+.input-btn{
+    display: flex;
+}
+
+hr{
+    color: white;
+    width: 100%;
+    margin: 0px;
+}
+.nav-border{
+    border-bottom: lightgray 1px solid;
+}
+.footer-text{
+    color: white !important;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    margin: 0% !important;
+    padding: 0% !important;
+}
+.home-nav {
+    font-size: larger !important;
+    margin-left: 10px;
+}
+.main{
+    background-color: #eee;
+}
+.bi{
+    color: #5c9735;
+    margin-right: 10px;
+}
+.icon-txt{
+    display: flex;
+}
+.bi-black{
+    color: black !important;
+}
+.v-line {
+    display: none; /* Hide by default */
+}
+
+@media (min-width: 768px) { /* For laptops and larger screens */
+    .v-line {
+        display: block;
+        border-left: 1px solid lightgray;
+        height: 500px;
+        margin: 0 20px;
+    }
+    .coupon-cell{
+        display: flex;
+        width: 25%;
+        justify-content: space-between;
+    }
+}
+
+.plant-card{
+    text-decoration: none;
+    color: inherit;
+}
+
+.products{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.plant{
+    width: 30%;
+}
+
+.images{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.star {
+    font-size: 1.5rem;
+    color: transparent;
+    cursor: pointer;
+    color: lightgrey;
+}
+.star:hover,
+.star.selected {
+    color: gold;
+}
+.products-container{
+    background-color: white;
+}
+
+body {
+    background-color: #f8f6f3;
+}
+
+.head {
+    background-color: white;
+}
+
+.cart-table .products-img {
+    width: 70px;
+    padding: 10px;
+}
+
+.colse-img-cell {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data {
+    height: 100px;
+}
+
+td {
+    height: 100px;
+    align-items: center;
+    padding: 11px 16px;
+}
+
+.product-title {
+    color: #8BC34A;
+}
+
+.green-btn {
+    background-color: #8BC34A;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.green-update-btn {
+    background-color: #8bc34aa1;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.card-cell {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f8f6f3;
+}
+
+.green-check-btn {
+    background-color: #8BC34A;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+    padding: 10px 40px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+    .product-img{
+        margin-left: 10px;
+    }
+    .coupon-cell{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.code{
+    width: 60% !important;
+    margin-left: 10px;
+}
+
+.plant-description{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.add-cart{
+    display: flex;
+    flex-direction: row;
+}
+.qty{
+    width: 50px;
+    border: lightgray 1px solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+.related{
+    display: flex;
+}
+
+.plant-img{
+    width: 100%;
+}
+.img-container{
+    width: 48%;
+}
+.img-container img{
+    width: 100%;
+}
+.txt-details{
+    padding: 20px;
+    width: 50%;
+}
+.product-details{
+    display: flex;
+    justify-content: space-between;
+}
