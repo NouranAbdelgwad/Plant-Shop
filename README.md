@@ -32,25 +32,21 @@ Welcome to the Plant Shop project! This application allows users to browse and p
    git clone https://github.com/NouranAbdelgwad/Plant-Shop.git
 Navigate to the Project Directory
 
-    ```bash
     cd Plant-Shop
 Install Dependencies
 
 Run the following command to install the required PHP packages:
 
-    ```bash
     composer install
 Set Up the Environment File
 
 Copy the .env.example file to create your .env file:
 
-    ```bash
     cp .env.example .env
 Configure the Database
 
 Open the .env file in your code editor and update the following lines to match your XAMPP database configuration:
 
-    ```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -70,7 +66,6 @@ Run Migrations
 
 If needed, run the following command:
 
-    ```bash
     php artisan migrate --path="/database/migrations/2024_08_19_191407_create_users_table.php"
 🔑 Key Functionalities
 Responsive Design 📱:
