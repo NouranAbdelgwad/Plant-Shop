@@ -18,11 +18,11 @@ return new class extends Migration
             $table->text('name');
             $table->double('price');
             $table->string('image_1');
-            $table->string('image_2');
+            $table->string('image_2')->nullable();
             $table->string('category');
-            $table->double('rate');
+            $table->double('rate')->nullable();
             $table->string('description');
-            $table->text('reviews');
+            $table->text('reviews')->nullable();
         });
 
         Schema::enableForeignKeyConstraints();

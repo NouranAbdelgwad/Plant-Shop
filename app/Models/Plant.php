@@ -11,6 +11,8 @@ class Plant extends Model
         'name',
         'image_1',
         'price',
+        'category',
+        'description'
     ];
     protected $table = "plants";
     use HasFactory;

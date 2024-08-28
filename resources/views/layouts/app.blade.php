@@ -36,6 +36,9 @@
                             <a class="nav-link home-nav" href="/plants">Plants</a>
                             <a class="nav-link home-nav" href="/about">About</a>
                             <a class="nav-link home-nav" href="/contact">Contact</a>
+                            @if (Auth::check() && Auth::user()->is_admin)
+                            <a class="nav-link home-nav" href="/dashboard">Dashboard</a>
+                            @endif
                             <a class="nav-link text-light home-nav" href="/cart">
                                 <b class="bi">{{$cartTotal}}</b>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
