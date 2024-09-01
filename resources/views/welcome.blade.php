@@ -59,7 +59,7 @@
                                                         </svg>
                                                     </a>
                                                 @else
-                                                    <a href="{{ route('login') }}" class="text-light">
+                                                    <a href="sign-up" class="text-light">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20"
                                                             height="20" fill="currentColor" class="bi bi-person-fill"
                                                             viewBox="0 0 16 16">

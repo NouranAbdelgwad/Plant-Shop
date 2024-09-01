@@ -6,6 +6,8 @@ use App\Http\Controllers\PlantController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LogInController;
+use App\Http\Controllers\RegisterationController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -60,5 +62,14 @@ Route::get('/register', [RegisteredUserController::class, 'create'])
     ->name('register');
 
 Route::post('/register', [RegisteredUserController::class, 'store']);
+
+Route::get("/sign-up", [RegisterationController::class, "index"]);
+Route::post("/sign-up", [RegisterationController::class, "store"]);
+
+Route::get("/log-in", [LogInController::class, "index"]);
+Route::post("/log-in", [LogInController::class, "check"]);
+
+Route::post('/logout', [LogInController::class, 'logout'])->name('logout');
+
 
 require __DIR__.'/auth.php';

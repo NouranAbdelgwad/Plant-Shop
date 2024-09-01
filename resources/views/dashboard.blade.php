@@ -164,6 +164,36 @@
                     </div>
                 </div>
             </form>
+
+            <form action="/logout" method="post" style="display:inline;">
+                @csrf
+                <button class="btn btn-danger p-2" type="button" title="Add product"
+                    data-bs-toggle="modal" data-bs-target="#logout">
+                    Log Out
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="logout" tabindex="-1"
+                    aria-labelledby="logoutLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="logoutLabel">Log Out</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Are you sure that you want to log out?</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success">Yes!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
             <div class="d-flex justify-content-center">
                 {{ $products->links() }}
             </div>

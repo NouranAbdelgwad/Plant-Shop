@@ -7,7 +7,9 @@
     <div class="container products-container p-5">
         <p class="text-secondary m-4">Home / Shop</p>
         <div class="row justify-content-between m-3">
-            <div class="col-6">Showing 9-10 results</div>
+            {{-- <div class="col-6">Showing 9-10 results</div> --}}
+            <div class="col-6"></div>
+
             <div class="col-5">
                 <form action="/sorted" method="GET">
                     <select name="sort" class="form-select" aria-label="Default select example" onchange="this.form.submit()">
