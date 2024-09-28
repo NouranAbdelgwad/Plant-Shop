@@ -2,6 +2,10 @@
 
 Welcome to the Plant Shop project! This application allows users to browse and purchase a variety of plants online. Below are the details regarding the technologies used, installation instructions, and key functionalities.
 
+## 🎥 Website Video
+
+https://github.com/user-attachments/assets/932c4b25-7293-4c11-b0ce-966730372174
+
 ## 🛠️ Used Technologies
 
 ### Front-end
